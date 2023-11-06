@@ -1,0 +1,305 @@
+* {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+figcaption {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    font-size: large;
+    padding: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+    background-color: white;
+    padding: 20px 20px;
+}
+
+.nav {
+    background-color: rgb(139, 134, 134);
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 25%;
+    font-size: 20px;
+}
+
+.nav a.active {
+    background-color: rgb(141, 141, 141);
+  color: black;
+}
+
+
+.nav a:hover {
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main h1 {
+    text-align: left;
+    font-size: 40px;
+    border-bottom: 2px dashed black;
+    margin-top: 30px;
+}
+
+.main h2 {
+    margin-top: 50px;
+}
+
+.h3-centre {
+    text-align: center;
+}
+
+#highlight-yellow {
+  background-color: yellow;
+}
+
+#hightlight-red {
+  background-color: red;
+}
+
+#highlight-blue {
+  background-color: #0066ff;
+}
+
+#highlight-green {
+  background-color: #00ff00;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-to-top a {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll-to-top a:hover {
+    background-color: #555;
+}
+
+footer {
+background-color: rgba(0, 0, 0, 0.623);
+padding: 10px;
+width: 100%;
+text-align: left;
+color: white;
+bottom: 0;
+box-sizing: border-box;
+clear: both;
+}
+
+#Info {
+  text-align: left;
+  color: #ffffff;
+}
+
+.Links {
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.Link-Separator {
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th {
+    background-color: #808080;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.WebStruct {
+  height: 300px;
+  max-width: 100%;
+  border: none;
+  border-radius: 20px;
+  height: auto;
+  max-height: 250px;
+  margin: auto;
+  float: right;
+  margin: 10px;
+}
+
+.Grayscale {
+  height: 150px;
+  max-width: 100%;
+  border: none;
+  border-radius: 20px;
+  height: auto;
+  max-height: 250px;
+  float: right;
+  margin: 10px;
+}
+
+.Mobile {
+  max-width: 150%;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  height: auto;
+  max-height: 500px;
+  float: right;
+  margin: 10px;
+}
+
+  @media screen and (max-width: 1000px) {
+
+  .header {
+    font-size: 200%;
+    position: relative;
+    top:100px;
+    height: 250px;
+    background-color: transparent;
+  }
+
+  .Link-Separator {
+    display: none;
+  }
+
+  .nav a {
+    display: block;
+    width: 25%;
+    padding: 10px;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: -1px;
+  }
+
+  .scroll-to-top {
+    display: none;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .Links {
+    display: none;
+  }
+
+  .Link-Separator {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    font-size: 100%;
+    position: relative;
+    top:100px;
+    height: 250px;
+    background-color: transparent;
+  }
+
+  .Link-Separator {
+    display: none;
+  }
+
+  .nav a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: -1px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 101%;
+    flex-direction: column;
+  }
+
+  .scroll-to-top {
+    display: none;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .Links {
+    display: none;
+  }
+
+  .Link-Separator {
+    display: none;
+  }
+
+}
